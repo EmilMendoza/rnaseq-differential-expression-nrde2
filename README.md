@@ -111,3 +111,9 @@ Running the workflow generates:
 ## Acknowledgments
 
 This project uses the publicly available RNA-seq dataset **PRJNA490376** from the NCBI Sequence Read Archive (SRA).
+
+## Repository Status
+
+This repository documents the workflow, analysis code, and supporting reports used for RNA-seq differential expression analysis of the PRJNA490376 dataset.
+
+The original intermediate files generated during transcript quantification (e.g., `quant.sf` and `tx2gene.tsv`) are no longer available. As a result, the repository serves as a documented analysis workflow and portfolio project rather than a fully reproducible pipeline.
