@@ -1,9 +1,15 @@
 # RNA-seq Differential Expression Analysis Using DESeq2
+![R](https://img.shields.io/badge/R-4.x-blue)
+![DESeq2](https://img.shields.io/badge/DESeq2-Bioconductor-green)
+![Nextflow](https://img.shields.io/badge/Nextflow-Workflow-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 Analysis of the publicly available **PRJNA490376** RNA-seq dataset comparing **NRDE2 knockdown** and **control** samples using the **nf-core/rnaseq** workflow, **Salmon**, **tximport**, and **DESeq2**.
+
 This project demonstrates an end-to-end RNA-seq analysis workflow, from transcript quantification to differential gene expression analysis and downstream visualization.
 ## Overview
-Analysis of publicly available PRJNA490376 RNA-seq dataset comparing NRDE2 knockdown and control samples using the nf-core/rnaseq pipeline, Salmon, tximport, and DESeq2.
 
+This repository presents a complete RNA-seq differential expression workflow for identifying genes affected by NRDE2 knockdown. The analysis begins with Salmon transcript quantification, summarizes transcript abundance to gene-level counts using tximport, and identifies differentially expressed genes with DESeq2.
 ## Objective
 
 The goal of this project is to identify genes that are differentially expressed between NRDE2 knockdown and control samples using an RNA-seq differential expression workflow.
@@ -30,14 +36,6 @@ The goal of this project is to identify genes that are differentially expressed 
 - Nextflow
 - SLURM
 
-## Input
-
-The analysis requires the following input files:
-
-- Salmon transcript quantification files (`quant.sf`)
-- Sample metadata (`samplesheet.csv`)
-- Transcript-to-gene mapping (`tx2gene.tsv`)
-
 ## Repository Structure
 
 ```text
@@ -48,6 +46,33 @@ results/      Figures and output tables
 data/         Dataset information
 environment/  Session information and package versions
 ```
+# Data
+
+This repository documents the analysis performed on the publicly available **PRJNA490376** RNA-seq dataset.
+
+Due to storage limitations and because some intermediate files are no longer available, the repository does **not** include:
+
+- Raw FASTQ files
+- Salmon transcript quantification files (`quant.sf`)
+- Transcript-to-gene mapping (`tx2gene.tsv`)
+
+The repository focuses on the downstream differential expression analysis and includes:
+
+- DESeq2 analysis script
+- Analysis report
+- Workflow documentation
+- SLURM submission script
+- Sample metadata
+  
+## Input
+
+The analysis was performed using:
+
+- Salmon transcript quantification files (`quant.sf`)
+- Transcript-to-gene mapping (`tx2gene.tsv`)
+- Sample metadata (`samplesheet.csv`)
+
+Only the sample metadata is included in this repository. The original quantification and mapping files are not included.
 
 ## Workflow
 
@@ -60,7 +85,7 @@ environment/  Session information and package versions
 
 ## Results
 
-Running the workflow generates:
+The workflow generates publication-ready tables and quality-control visualizations, including:
 
 - Differential expression results (.csv)
 - PCA plot
@@ -79,3 +104,7 @@ Running the workflow generates:
 - RNA-seq quality assessment
 - Data visualization in R
 - Reproducible bioinformatics workflow development
+
+## Acknowledgments
+
+This project uses the publicly available RNA-seq dataset **PRJNA490376** from the NCBI Sequence Read Archive (SRA).
