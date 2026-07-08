@@ -73,7 +73,7 @@ The analysis was performed using:
 - Sample metadata (`samplesheet.csv`)
 
 Only the sample metadata is included in this repository. The original quantification and mapping files are not included.
-
+Note: The original Salmon quantification files and transcript-to-gene mapping file are not included, so the script documents the analysis workflow but cannot be rerun from this repository alone without regenerating those files.
 ## Workflow
 
 1. Import Salmon transcript quantifications.
@@ -85,9 +85,12 @@ Only the sample metadata is included in this repository. The original quantifica
 
 ## Results
 
-The workflow generates publication-ready tables and quality-control visualizations, including:
+Running the workflow generates:
 
-- Differential expression results (.csv)
+- Differential expression results (`deseq2_results.csv`)
+- Significant genes table (`significant_genes.csv`)
+- Upregulated genes table (`upregulated_genes.csv`)
+- Downregulated genes table (`downregulated_genes.csv`)
 - PCA plot
 - MA plot
 - Dispersion estimate plot
