@@ -1,0 +1,15 @@
+sample,fastq_1,strandedness,condition
+
+SRR7819990,SRR7819990.fastq.gz,unstranded,control
+
+SRR7819991,SRR7819991.fastq.gz,unstranded,control
+
+SRR7819992,SRR7819992.fastq.gz,unstranded,control
+
+SRR7819993,SRR7819993.fastq.gz,unstranded,treatment
+
+SRR7819994,SRR7819994.fastq.gz,unstranded,treatment
+
+SRR7819995,SRR7819995.fastq.gz,unstranded,treatment
+
+
