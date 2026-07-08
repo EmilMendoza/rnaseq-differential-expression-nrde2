@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a rel="noopener" class="navbar-brand" href="#">
+      <img src="javascript://"/>
+      Nextflow Report
+    </a>
+    
+      <span class="navbar-toggler-icon"></span>
+    
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a rel="noopener" class="nav-link" href="#">Summary</a></li>
+        <li class="nav-item"><a rel="noopener" class="nav-link" href="#resources">Resources</a></li>
+        <li class="nav-item"><a rel="noopener" class="nav-link" href="#tasks">Tasks</a></li>
+      </ul>
+      <span class="navbar-text">
+        [jovial_wescoff]
+      </span>
+    </div>
+  </nav>
+
+  <div class="jumbotron mb-0">
+    <div class="container">
+
+      <h1 class="display-3">Nextflow workflow report</h1>
+      <h2 class="text-muted mb-4"><samp>[jovial_wescoff]</samp> </h2>
+
+      
+          <div class="alert alert-success mb-4">
+              Workflow execution completed successfully!
+          </div>
+      
+
+      <dl>
+        <dt>Run times</dt>
+        <dd>
+          <span>12-May-2025 10:39:58</span> - <span>12-May-2025 16:22:04</span>
+          (<span></span>duration: <strong>5h 42m 6s</strong>)
+        </dd>
+
+        <dl>
+          <div class="progress" style="height: 1.6rem;margin: 1.2rem auto;border-radius: 0.20rem;">
+            <div style="width: 100.0%;" class="progress-bar bg-success" title="200 tasks succeeded"><span class="text-truncate">&#160; 200 succeeded &#160;</span></div>
+            <div style="width: 0.0%;" class="progress-bar bg-secondary" title="0 tasks were cached"><span class="text-truncate">&#160; 0 cached &#160;</span></div>
+            <div style="width: 0.0%;" class="progress-bar bg-warning" title="0 tasks reported and error and were ignored"><span class="text-truncate">&#160; 0 ignored &#160;</span></div>
+            <div style="width: 0.0%;" class="progress-bar bg-danger" title="0 tasks failed"><span class="text-truncate">&#160; 0 failed &#160;</span></div>
+          </div>
+        </dl>
+
+        <dt>Nextflow command</dt>
+        <dd><pre class="nfcommand"><code>nextflow run nf-core/rnaseq -r 3.14.0 -profile singularity --input samplesheet.csv --fasta Homo_sapiens.GRCh38.dna.primary_assembly.fa --gtf Homo_sapiens.GRCh38.111.gtf --outdir results_rnaseq --saveReference --salmon_gc_bias</code></pre></dd>
+      </dl>
+
+      <dl class="row small">
+        <dt class="col-sm-3">CPU-Hours</dt>
+        <dd class="col-sm-9"><samp>68.0</samp></dd>
+
+        <dt class="col-sm-3">Launch directory</dt>
+        <dd class="col-sm-9"><samp>/scratch/ejm6256/project.2025</samp></dd>
+
+        <dt class="col-sm-3">Work directory</dt>
+        <dd class="col-sm-9"><samp>/scratch/ejm6256/project.2025/work</samp></dd>
+
+        <dt class="col-sm-3">Project directory</dt>
+        <dd class="col-sm-9"><samp>/home/ejm6256/.nextflow/assets/nf-core/rnaseq</samp></dd>
+
+        
+          <dt class="col-sm-3">Script name</dt>
+          <dd class="col-sm-9"><samp>main.nf</samp></dd>
+        
+
+        
+          <dt class="col-sm-3">Script ID</dt>
+          <dd class="col-sm-9"><code>746820de9bf04c0ec23e1e0295aaf91b</code></dd>
+        
+
+        <dt class="col-sm-3">Workflow session</dt>
+        <dd class="col-sm-9"><code>be10dea8-012e-4e30-bdd0-855afd05865d</code></dd>
+
+        
+          <dt class="col-sm-3">Workflow repository</dt>
+          <dd class="col-sm-9"><code>https://github.com/nf-core/rnaseq</code>, revision <code>3.14.0</code> (commit hash <code>b89fac32650aacc86fcda9ee77e00612a1d77066</code>)</dd>
+        
+
+        <dt class="col-sm-3">Workflow profile</dt>
+        <dd class="col-sm-9">singularity</dd>
+
+        
+
+        
+
+        <dt class="col-sm-3">Nextflow version</dt>
+        <dd class="col-sm-9">version 24.10.4, build 5934 (20-01-2025 16:47 UTC)</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 style="padding-top: 80px;">Resource Usage</h2>
+    <p>These plots give an overview of the distribution of resource usage for each process.</p>
+
+    <h4>CPU</h4>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link active" href="#cpuplot_tabpanel">
+          Raw Usage
+        </a>
+      </li>
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link" href="#pctcpuplot_tabpanel">
+          % Allocated
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active">
+        <div></div>
+      </div>
+      <div class="tab-pane fade">
+        <div></div>
+      </div>
+
+    </div>
+
+    <h4>Memory</h4>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link active" href="#memplotlot_tabpanel">
+          Physical (RAM)
+        </a>
+      </li>
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link" href="#vmemplot_tabpanel">
+          Virtual (RAM + Disk swap)
+        </a>
+      </li>
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link" href="#pctmemplot_tabpanel">
+          % RAM Allocated
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active">
+        <div></div>
+      </div>
+      <div class="tab-pane fade">
+        <div></div>
+      </div>
+      <div class="tab-pane fade">
+        <div></div>
+      </div>
+    </div>
+
+    <h4>Job Duration</h4>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link active" href="#timeplot_tabpanel">
+          Raw Usage
+        </a>
+      </li>
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link" href="#pcttimeplot_tabpanel">
+          % Allocated
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active">
+        <div></div>
+      </div>
+      <div class="tab-pane fade">
+        <div></div>
+      </div>
+    </div>
+
+    <h4>I/O</h4>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link active" href="#readplot_tabpanel">
+          Read
+        </a>
+      </li>
+      <li class="nav-item">
+        <a rel="noopener" class="nav-link" href="#writeplot_tabpanel">
+          Write
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active">
+        <div></div>
+      </div>
+      <div class="tab-pane fade">
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <h2 style="padding-top: 80px;">Tasks</h2>
+      <p>This table shows information about each task in the workflow. Use the search box on the right
+        to filter rows for specific values. Clicking headers will sort the table by that value and
+        scrolling side to side will reveal more columns.</p>
+      
+        <label class="mr-sm-2" for="nf-table-humanreadable">Values shown as:</label>
+        
+          <option value="true">Human readable</option>
+          <option value="false">Raw values</option>
+        
+      
+    </div>
+    <div class="container-fluid">
+      <table class="table small table-striped"></table>
+    </div>
+
+    <div>
+      (tasks table omitted because the dataset is too big)
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid">
+      Generated by <a rel="noopener" href="https://www.nextflow.io" target="_blank">Nextflow</a>, version 24.10.4
+    </div>
+  </footer>
+
+  
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2026.6.221/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+							const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+							elm.replaceWith(mrow);
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							outputScale: 1.5,
+							renderLatex: true,
+							enableMML3Support: false
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.6.221/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.6.221/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
